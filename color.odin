@@ -27,9 +27,3 @@ color :: proc(input: string, color: Color, foreground := true, reset := true) ->
     reset := reset ? "\033[0m" : ""
     return fmt.aprintf("\033[%dm%s%s",color, input, reset)
 }
-
-main :: proc() {
-    s := color("Hello, World!", Color.bright_red, false, false)
-    fmt.println(s)
-    fmt.println("aqaaaaa")
-}

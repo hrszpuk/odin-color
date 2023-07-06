@@ -1,9 +1,9 @@
 package main
 
-import ".."
+import color ".."
 import "core:fmt"
 
 main :: proc() {
-    s := color("Hello, World!", Color.bright_red)
+    s := color.color("Hello, World!", color.Color.bright_red)
     fmt.println(s)
 }
