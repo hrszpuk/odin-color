@@ -45,11 +45,38 @@ ON_BRIGHT_WHITE    :: ESC + "107m"
 
 @(private="package")
 color :: proc(color, input: string) -> string {
-    return fmt.aprintf("%s%s%s", color, input, reset)
+    return fmt.aprintf("%s%s%s", color, input, RESET)
 }
 
 black :: proc(input: string) -> string {
     return color(BLACK, input)
+}
+
+red :: proc(input: string) -> string {
+    return color(BLACK, input)
+}
+
+green :: proc(input: string) -> string {
+    return color(GREEN, input)
+}
+
+yellow :: proc(input: string) -> string {
+    return color(YELLOW, input)
+}
+
+blue :: proc(input: string) -> string {
+    return color(BLUE, input)
+}
+
+magenta :: proc(input: string) -> string {
+    return color(MAGENTA, input)
+}
+
+cyan :: proc(input: string) -> string {
+    return color(CYAN, input)
+}
+white :: proc(input: string) -> string {
+    return color(WHITE, input)
 }
 
 main :: proc() {
