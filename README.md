@@ -1,38 +1,21 @@
 # Odin color
-A simple, easy to use terminal colors package.
+A simple ANSI color package similar to Rust's colored crate.
+<!-- BADGIE TIME -->
+<!-- END BADGIE TIME -->
 
-Installation: I recommend using a git submodule inside a directory called "external" and importing like below:
+[Read more in our documentation](https://github.com/hrszpuk/odin-color/edit/main/DOCS.md)
+or [check out some examples](https://github.com/hrszpuk/odin-color/edit/main/examples/README.md)
 
-```odin
-package main
+# Installation
 
-import color "external/color"  // Path to package
+## Windows
 
-main :: proc() {
-    str := "Hello, World"
+## MacOS
 
-    // color(input=.., color=..., foreground=true | false, reset = true | false)
-    colored := color.color(str, color.Color.red)
+## Linux
 
-    /* Colors:
-    reset,
-    black,
-    red,
-    green,
-    yellow,
-    blue,
-    magenta,
-    cyan,
-    white,
-    bright_black,
-    bright_red,
-    bright_green,
-    bright_yellow,
-    bright_blue,
-    bright_magenta,
-    bright_cyan,
-    bright_white,
-    */
-}
+### Package Manager
 
-```
+### Install Script
+
+### Manual Install
