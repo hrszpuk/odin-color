@@ -11,16 +11,18 @@ A simple ANSI color package similar to Rust's colored crate.
 [Read more in our documentation](https://github.com/hrszpuk/odin-color/edit/main/DOCS.md)
 or [check out some examples](https://github.com/hrszpuk/odin-color/edit/main/examples/README.md)
 
-# Installation
+## Installation
 
-## Windows
+### Submodule
+Create an external folder in your project's root directory.
+Add the project as a submodule like in the example below:
+```
+git submodule add https://github.com/hrszpuk/odin-color.git external/odin-color
+```
+Import the package using a relative path: `import color "./external/odin-color`.
 
-## MacOS
+### Shared collection
+Download the repository code using git and place the folder in your shared/external collection directory.
+Import the package using `import color "collection-name:odin-color"` and build/run with the flag `--collection:collection-name=/path/to/collection`.
 
-## Linux
 
-### Package Manager
-
-### Install Script
-
-### Manual Install
