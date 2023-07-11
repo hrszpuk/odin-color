@@ -53,7 +53,7 @@ black :: proc(input: string) -> string {
 }
 
 red :: proc(input: string) -> string {
-    return color(BLACK, input)
+    return color(RED, input)
 }
 
 green :: proc(input: string) -> string {
@@ -75,8 +75,41 @@ magenta :: proc(input: string) -> string {
 cyan :: proc(input: string) -> string {
     return color(CYAN, input)
 }
-white :: proc(input: string) -> string {
-    return color(WHITE, input)
+
+on_white :: proc(input: string) -> string {
+    return color(ON_WHITE, input)
+}
+
+on_black :: proc(input: string) -> string {
+    return color(ON_BLACK, input)
+}
+
+on_red :: proc(input: string) -> string {
+    return color(ON_RED, input)
+}
+
+on_green :: proc(input: string) -> string {
+    return color(ON_GREEN, input)
+}
+
+on_yellow :: proc(input: string) -> string {
+    return color(ON_YELLOW, input)
+}
+
+on_blue :: proc(input: string) -> string {
+    return color(ON_BLUE, input)
+}
+
+on_magenta :: proc(input: string) -> string {
+    return color(ON_MAGENTA, input)
+}
+
+on_cyan :: proc(input: string) -> string {
+    return color(ON_CYAN, input)
+}
+
+on_white :: proc(input: string) -> string {
+    return color(ON_WHITE, input)
 }
 
 main :: proc() {
