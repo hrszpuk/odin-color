@@ -15,7 +15,6 @@ MAGENTA         :: ESC + "35m"
 CYAN            :: ESC + "36m"
 WHITE           :: ESC + "37m"
 
-ON_RESET           :: ESC + "0m"
 ON_BLACK           :: ESC + "40m"
 ON_RED             :: ESC + "41m"
 ON_GREEN           :: ESC + "42m"
