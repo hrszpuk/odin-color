@@ -75,6 +75,10 @@ cyan :: proc(input: string) -> string {
     return color(CYAN, input)
 }
 
+white :: proc(input: string) -> string {
+    return color(WHITE, input)
+}
+
 on_white :: proc(input: string) -> string {
     return color(ON_WHITE, input)
 }
