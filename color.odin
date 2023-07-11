@@ -112,6 +112,62 @@ on_white :: proc(input: string) -> string {
     return color(ON_WHITE, input)
 }
 
+bright_black :: proc(input: string) -> string {
+    return color(BRIGHT_BLACK, input)
+}
+
+bright_red :: proc(input: string) -> string {
+    return color(BRIGHT_RED, input)
+}
+
+bright_green :: proc(input: string) -> string {
+    return color(BRIGHT_GREEN, input)
+}
+
+bright_yellow :: proc(input: string) -> string {
+    return color(BRIGHT_YELLOW, input)
+}
+
+bright_blue :: proc(input: string) -> string {
+    return color(BRIGHT_BLUE, input)
+}
+
+bright_magenta :: proc(input: string) -> string {
+    return color(BRIGHT_MAGENTA, input)
+}
+
+bright_cyan :: proc(input: string) -> string {
+    return color(BRIGHT_CYAN, input)
+}
+
+on_bright_black :: proc(input: string) -> string {
+    return color(ON_BRIGHT_BLACK, input)
+}
+
+on_bright_red :: proc(input: string) -> string {
+    return color(ON_BRIGHT_RED, input)
+}
+
+on_bright_green :: proc(input: string) -> string {
+    return color(ON_BRIGHT_GREEN, input)
+}
+
+on_bright_yellow :: proc(input: string) -> string {
+    return color(ON_BRIGHT_YELLOW, input)
+}
+
+on_bright_blue :: proc(input: string) -> string {
+    return color(ON_BRIGHT_BLUE, input)
+}
+
+on_bright_magenta :: proc(input: string) -> string {
+    return color(ON_BRIGHT_MAGENTA, input)
+}
+
+on_bright_cyan :: proc(input: string) -> string {
+    return color(ON_BRIGHT_CYAN, input)
+}
+
 main :: proc() {
     fmt.println(black("Hello, World!"))
 }
