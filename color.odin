@@ -167,7 +167,3 @@ on_bright_magenta :: proc(input: string) -> string {
 on_bright_cyan :: proc(input: string) -> string {
     return color(ON_BRIGHT_CYAN, input)
 }
-
-main :: proc() {
-    fmt.println(black("Hello, World!"))
-}
