@@ -170,3 +170,7 @@ on_bright_magenta :: proc(input: string) -> string {
 on_bright_cyan :: proc(input: string) -> string {
     return color(ON_BRIGHT_CYAN, input)
 }
+
+on_bright_white :: proc(input: string) -> string {
+    return color(ON_BRIGHT_WHITE, input)
+}
