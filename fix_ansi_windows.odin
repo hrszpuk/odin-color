@@ -1,4 +1,4 @@
-//+build windows
+//+private
 package terminal 
 
 // Windows terminal does not support ANSI escape codes by default. 
@@ -7,32 +7,25 @@ package terminal
 import "core:fmt"
 import "core:sys/windows"
 
-@private
 ENABLE_VIRTUAL_TERMINAL_PROCESSING :: 0x0004;
 
-when #config(FIX_WINDOWS_ANSI, true) {
-    @(init, private)
-    __fix_windows_ansi__ :: proc() {
-        stdout_handle := windows.GetStdHandle(windows.STD_OUTPUT_HANDLE);
-        if stdout_handle == windows.INVALID_HANDLE_VALUE {
-            fmt.println("__fix_windows_ansi__: Failed to get standard output handle");
-            return;
-        }
-    
-        mode: u32;
-        if !windows.GetConsoleMode(stdout_handle, &mode) {
-            fmt.println("__fix_windows_ansi__: Failed to get console mode");
-            return;
-        }
-    
-        mode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-        if !windows.SetConsoleMode(stdout_handle, mode) {
-            fmt.println("__fix_windows_ansi__: Failed to set console mode (ENABLE_VIRTUAL_TERMINAL_PROCESSING)");
-            return;
-        }
+@init
+__fix_windows_ansi__ :: proc() {
+    stdout_handle := windows.GetStdHandle(windows.STD_OUTPUT_HANDLE);
+    if stdout_handle == windows.INVALID_HANDLE_VALUE {
+        fmt.println("__fix_windows_ansi__: Failed to get standard output handle");
+        return;
     }
-}
 
-main :: proc() {
+    mode: u32;
+    if !windows.GetConsoleMode(stdout_handle, &mode) {
+        fmt.println("__fix_windows_ansi__: Failed to get console mode");
+        return;
+    }
 
+    mode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    if !windows.SetConsoleMode(stdout_handle, mode) {
+        fmt.println("__fix_windows_ansi__: Failed to set console mode (ENABLE_VIRTUAL_TERMINAL_PROCESSING)");
+        return;
+    }
 }
