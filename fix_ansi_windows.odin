@@ -1,15 +1,19 @@
-//+private
 package terminal 
-
-// Windows terminal does not support ANSI escape codes by default. 
-// We detect if the platform is Windows and enable support automatically.
 
 import "core:fmt"
 import "core:sys/windows"
 
+@private
 ENABLE_VIRTUAL_TERMINAL_PROCESSING :: 0x0004;
 
-@init
+/* This procedure enables support for ANSI escape codes which are required for most methods in the library.
+   It is automatically called at the beginning of the program (before main) and is only avaiable on Windows.
+
+   If any errors occur during the execution of this procedure a message will be displayed in stdout.
+
+   A warning will appear at compile time if this procedure is used in user code.
+ */
+@(init, warning="It is not recommended to use this procedure as it is considered internal to odin-terminal.")
 __fix_windows_ansi__ :: proc() {
     stdout_handle := windows.GetStdHandle(windows.STD_OUTPUT_HANDLE);
     if stdout_handle == windows.INVALID_HANDLE_VALUE {
