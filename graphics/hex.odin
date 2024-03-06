@@ -1,0 +1,3 @@
+package graphics 
+
+HexColor :: string 
