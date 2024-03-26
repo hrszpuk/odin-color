@@ -10,6 +10,18 @@ A simplistic, easy to use ANSI terminal library.
 [Read more in our documentation](https://github.com/hrszpuk/odin-terminal/edit/main/DOCS.md)
 or [check out some examples](https://github.com/hrszpuk/odin-terminal/edit/main/examples/README.md)
 
+## Features (WIP)
+- [ ] ANSI, Extended ANSI, and Truecolor (rgb) coloring
+- [ ] Cursor controls
+- [ ] Erasing functions
+- [ ] Text graphics (italics, blinkings, etc)
+- [ ] Screen modes
+- [ ] Common private modes
+- [ ] Keyboard events
+- [ ] Mouse events
+- [ ] Termios bindings
+- [ ] Some kind of Windows terminal bindings (research needed)
+
 ## Installation
 
 ### Submodule
