@@ -1,0 +1,2 @@
+# Odin terminal documentation
+Documentation for the [API can be found in docs/API.md](./API.md) and for the [architecture of the library, documentation can be found in docs/ARCHITECTURE.md](./ARCHITECTURE.md).
