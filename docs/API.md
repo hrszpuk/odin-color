@@ -128,6 +128,15 @@ Format: `color_256(color)` (foreground) or `on_color_256(color)` (background)
 
 
 ### Truecolor (rgb) Colors
+Truecolor (rgb) colors are the most advanced color mode available.
+Truecolor colors are supported by most modern terminals, but not all.
+
+```odin
+truecolor_rgb(r: u8, g: u8, b: u8)
+on_truecolor_rgb(r: u8, g: u8, b: u8)
+```
+Format: `truecolor_rgb(r, g, b)` (foreground) or `on_truecolor_rgb(r, g, b)` (background)
+
 
 ### High-level color functions
 The high-level color functions will automatically adjust to the terminal's capabilities.
