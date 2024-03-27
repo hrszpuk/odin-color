@@ -201,3 +201,19 @@ on_color(h: f32, s: f32, l: f32)
 ## Mouse events
 
 ## Termios bindings
+
+## Terminal information
+The terminal information is stored in the `terminal_info` struct.
+The struct contains the following fields:
+```odin
+// Terminal information
+using terminal
+terminal_info.name                      // Terminal name (e.g. cmd.exe, xterm, etc)
+terminal_info.title                     // Terminal title
+terminal_info.shell                     // Shell name (e.g. bash, cmd, etc)
+terminal_info.supports_ansi             // Returns true if the terminal supports ANSI colors
+terminal_info.supports_extended_ansi    // Returns true if the terminal supports extended ANSI colors
+terminal_info.supports_color_256        // Returns true if the terminal supports 256-bit colors
+terminal_info.supports_truecolor        // Returns true if the terminal supports truecolor (rgb) colors
+terminal_info.supports_aixterm_bright   // Returns true if the terminal supports AIXTerm bright colors
+```
