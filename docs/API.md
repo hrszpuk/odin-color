@@ -153,12 +153,37 @@ The "best color mode" is determined by the following order of priority:
 
 ```odin
 // Extended ANSI colors
+red()
+green()
+blue()
+yellow()
+magenta()
+cyan()
+white()
+black()
+gray()
+on_red()
+on_green()
+on_blue()
+on_yellow()
+on_magenta()
+on_cyan()
+on_white()
+on_black()
+on_gray()
 
+// Color
+color(r: u8, g: u8, b: u8)
+color(c: u8)
+color(hex: u32)
+color(h: f32, s: f32, v: f32)
+color(h: f32, s: f32, l: f32)
 
-// Truecolor (rgb) colors
-
-
-// Terminal information
+on_color(r: u8, g: u8, b: u8)
+on_color(c: u8)
+on_color(hex: u32)
+on_color(h: f32, s: f32, v: f32)
+on_color(h: f32, s: f32, l: f32)
 ```
 
 ## Cursor controls
