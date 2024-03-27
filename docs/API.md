@@ -23,7 +23,7 @@
 ### Color diagnostics
 The color diagnostics are automatically ran and will check what colors are supported by the terminal.
 The diagnostics are utilised by the high-level color functions to determine what color mode to use.
-The terminal information is also stored in the `terminal_info` struct for manual use.
+The terminal information is also stored in the `__terminal_info__` struct for manual use.
 To avoid issues, it is recommended you use the h[igh-level color functions](#high-level-color-functions) which will automatically adjust to the terminal's capabilities.
 
 If you want to use the exact color codes, they are available in the format `[color]_ansi`, `[color]_extended`, or `[color]_truecolor`.
