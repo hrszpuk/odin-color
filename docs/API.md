@@ -142,8 +142,14 @@ Format: `truecolor_rgb(r, g, b)` (foreground) or `on_truecolor_rgb(r, g, b)` (ba
 The high-level color functions will automatically adjust to the terminal's capabilities.
 It will automatically use the best color mode available for the terminal.
 
-The API resembles the truecolor functions, but also includes functions for the extended ANSI colors.
-For most cases, you should use the high-level color functions.
+The API resembles the truecolor functions (with polymorphic hex, hsl, and hsv alternatives), but also includes functions for the extended ANSI colors.
+All functions mentioned below will convert to the best color mode available for the terminal.
+
+The "best color mode" is determined by the following order of priority:
+1. Truecolor (rgb)
+2. 256-bit colors
+3. Extended ANSI colors 
+4. ANSI colors
 
 ```odin
 // Extended ANSI colors
