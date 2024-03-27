@@ -86,6 +86,46 @@ on_black_extended()
 Format: `[color]_extended` (foreground) or `on_[color]_extended` (background)
 
 ### AIXTerm Bright Colors
+In order to make colors brighter, ANSI terminals use the bold text escape sequence. 
+If the terminal supports the AIXTerm bright colors, bright colors can be used without making the text bold.
+
+```odin
+// Foreground colors
+bright_red_aix()
+bright_green_aix()
+bright_blue_aix()
+bright_yellow_aix()
+bright_magenta_aix()
+bright_cyan_aix()
+bright_white_aix()
+bright_black_aix()
+
+// Background colors
+on_bright_red_aix()
+on_bright_green_aix()
+on_bright_blue_aix()
+on_bright_yellow_aix()
+on_bright_magenta_aix()
+on_bright_cyan_aix()
+on_bright_white_aix()
+on_bright_black_aix()
+```
+Format: `bright_[color]_aix` (foreground) or `on_bright_[color]_aix` (background)
+
+If you wish to make colors brighter, but the terminal does not support the AIXTerm bright colors, you can use the bold text escape sequence.
+
+
+### 256-bit Colors
+256-bit colors use a 6x6x6 color cube to generate 256 colors.
+These colors are supported by most modern terminals, but not all.
+
+```odin
+color_256(color: u8)
+on_color_256(color: u8)
+```
+
+Format: `color_256(color)` (foreground) or `on_color_256(color)` (background)
+
 
 ### Truecolor (rgb) Colors
 
