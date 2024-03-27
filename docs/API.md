@@ -56,6 +56,34 @@ black_ansi()
 Format: `[color]_ansi`
 
 ### Extended ANSI Colors
+There are 16 extended ANSI colors available for use.
+These colors are supported by most terminals, but not all.
+
+If the terminal does not support extended ANSI colors, the colors will be downgraded to the 8 ANSI colors.
+Optionally, background colors can be downgraded to nothing if the terminal does not support them using `-define:ODIN_TERMINAL_DISABLE_EXTENDED_ANSI_BACKGROUND_COLORS`.
+
+```odin
+// Foreground colors
+red_extended()
+green_extended()
+blue_extended()
+yellow_extended()
+magenta_extended()
+cyan_extended()
+white_extended()
+black_extended()
+
+// Background colors
+on_red_extended()
+on_green_extended()
+on_blue_extended()
+on_yellow_extended()
+on_magenta_extended()
+on_cyan_extended()
+on_white_extended()
+on_black_extended()
+```
+Format: `[color]_extended` (foreground) or `on_[color]_extended` (background)
 
 ### AIXTerm Bright Colors
 
