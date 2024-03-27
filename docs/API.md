@@ -31,6 +31,14 @@ More information about both types of functions are available below.
 
 If you wish to disable to color diagnostics, you can do so by using `-define:ODIN_TERMINAL_DISABLE_COLOR_DIAGNOSTICS` when building your project.
 
+### Reset 
+Reset is a special color that will reset the terminal's color to the default color.
+This function is available in all color modes.
+
+```odin
+reset()
+```
+
 ### ANSI Colors
 
 ### Extended ANSI Colors
