@@ -40,6 +40,20 @@ reset()
 ```
 
 ### ANSI Colors
+There are 8 ANSI colors available for use.
+These colors are the most common and are supported by almost all terminals.
+
+```odin
+red_ansi()
+green_ansi()
+blue_ansi()
+yellow_ansi()
+magenta_ansi()
+cyan_ansi()
+white_ansi()
+black_ansi()
+```
+Format: `[color]_ansi`
 
 ### Extended ANSI Colors
 
