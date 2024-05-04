@@ -42,6 +42,30 @@ ON_BRIGHT_MAGENTA  :: ESC + "105m"
 ON_BRIGHT_CYAN     :: ESC + "106m"
 ON_BRIGHT_WHITE    :: ESC + "107m"
 
+// taken from hrszpuk/odin-color:dev:
+// Styles
+
+BOLD                :: ESC + "1m"
+DIM                 :: ESC + "2m"
+ITALIC              :: ESC + "3m"
+UNDERLINE           :: ESC + "4m"
+BLINKING            :: ESC + "5m"
+INVERSE             :: ESC + "7m"
+HIDDEN              :: ESC + "8m"
+STRIKETHROUGH       :: ESC + "9m"
+
+// Style resets
+
+BOLD_RESET          :: ESC + "22m"
+DIM_RESET           :: ESC + "22m"
+ITALIC_RESET        :: ESC + "23m"
+UNDERLINE_RESET     :: ESC + "24m"
+BLINKING_RESET      :: ESC + "25m"
+INVERSE_RESET       :: ESC + "27m"
+HIDDEN_RESET        :: ESC + "28m"
+STRIKETHROUGH_RESET :: ESC + "29m"
+
+
 @(private="package")
 color :: proc(color, input: string) -> string {
     return fmt.aprintf("%s%s%s", color, input, RESET)
