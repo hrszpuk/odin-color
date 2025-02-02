@@ -1,4 +1,4 @@
-package utilities 
+package terminal 
 
 import "core:log"
 import "core:sys/windows"
