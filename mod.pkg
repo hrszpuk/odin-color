@@ -1,8 +1,0 @@
-{
-	"version": "0.0.1-beta",
-	"description": "A simple color pacakge for Odin.",
-	"url": "https://github.com/hrszpuk/odin-color",
-	"readme": "README.md",
-	"license": "MIT",
-	"keywords": ["color", "console", "terminal", "remy"]
-}
