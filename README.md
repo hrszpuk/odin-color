@@ -10,8 +10,8 @@ A simple ANSI color package similar to Rust's colored crate.
 
 ![image](https://github.com/hrszpuk/odin-color/assets/107559570/3946ebe3-470c-4913-bc3d-ce262e16989b)
 
-[Read more in our documentation](https://github.com/hrszpuk/odin-color/edit/main/DOCS.md)
-or [check out some examples](https://github.com/hrszpuk/odin-color/edit/main/examples/README.md)
+[Read more in our documentation](https://github.com/hrszpuk/odin-color/blob/main/DOCS.md)
+or [check out some examples](https://github.com/hrszpuk/odin-color/blob/main/examples/README.md)
 
 ## Installation
 
